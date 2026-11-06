@@ -1,0 +1,274 @@
+/* Page အကျယ် 1536 ကို အခြေခံထားတယ်: 1rem = 10 */
+:root {
+  --bg: #00050d;
+  --red: #e1141b;
+}
+
+html {
+  font-size: calc(100vw / 153.6);
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg);
+  color: #fff;
+  font-family: Inter, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.page {
+  position: relative;
+  width: 153.6rem;
+  height: 638rem;
+  overflow: hidden;
+  background:
+    radial-gradient(circle 70rem at 50% 46rem, rgba(225, 20, 27, 0.2), transparent),
+    var(--bg);
+}
+
+/* ===== ပိုစတာ ===== */
+.p {
+  --r: 0deg;
+  position: absolute;
+  z-index: 2;
+  transform: rotate(var(--r));
+  box-shadow: 0 2.4rem 6rem rgba(0, 0, 0, 0.75);
+  animation: drift 7s ease-in-out infinite alternate;
+  transition: transform 0.45s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.45s ease;
+}
+
+.p img {
+  display: block;
+  width: 100%;
+}
+
+.d2 {
+  animation-delay: -2.5s;
+}
+
+.d3 {
+  animation-delay: -5s;
+}
+
+.still {
+  animation: none;
+}
+
+.p:hover {
+  z-index: 6;
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 3.4rem 9rem rgba(225, 20, 27, 0.45);
+}
+
+@keyframes drift {
+  from {
+    translate: 0 -0.8rem;
+  }
+  to {
+    translate: 0 0.8rem;
+  }
+}
+
+.edge {
+  box-shadow: 1.6rem 1.6rem 0 var(--red);
+}
+
+.edge:hover {
+  box-shadow: 2.2rem 2.2rem 0 var(--red);
+}
+
+/* ===== မရပ်ဘဲ ရွေ့နေတဲ့ စာတန်း ===== */
+.marquee {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  display: flex;
+  width: max-content;
+  font-weight: 800;
+  line-height: 1;
+  white-space: pre;
+  animation: slide 45s linear infinite;
+}
+
+.marquee.back {
+  animation-direction: reverse;
+}
+
+.marquee.outline {
+  font-size: 17rem;
+  color: transparent;
+  -webkit-text-stroke: 0.15rem rgba(255, 255, 255, 0.16);
+}
+
+.marquee.solid {
+  font-size: 21rem;
+  color: #00050d;
+  animation-duration: 38s;
+}
+
+@keyframes slide {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ===== Hero ===== */
+.chip {
+  position: absolute;
+  z-index: 3;
+  padding: 0.7rem 1.8rem;
+  background: var(--red);
+  font-weight: 600;
+  font-size: 1.4rem;
+  letter-spacing: 0.2rem;
+  white-space: nowrap;
+  transform: translateX(-50%) rotate(-2deg);
+}
+
+.title {
+  position: absolute;
+  left: 26.8rem;
+  top: 31rem;
+  z-index: 3;
+  width: 100rem;
+  height: 30.7rem;
+  overflow: hidden;
+}
+
+.title img {
+  position: absolute;
+  left: -18.01%;
+  top: -96.19%;
+  display: block;
+  width: 128.58%;
+  height: 296.19%;
+  max-width: none;
+}
+
+.tag {
+  position: absolute;
+  left: 0;
+  top: 65rem;
+  z-index: 3;
+  width: 153.6rem;
+  font-size: 2.5rem;
+  letter-spacing: -0.15rem;
+  text-align: center;
+}
+
+.tag b {
+  font-weight: 600;
+}
+
+/* ===== ဂဏန်းနဲ့ စာ ===== */
+.no {
+  position: absolute;
+  z-index: 3;
+  color: var(--red);
+  font-weight: 600;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+/* ===== အနီရောင်ဘန်း ===== */
+.band {
+  position: absolute;
+  left: 0;
+  top: 220rem;
+  z-index: 1;
+  width: 153.6rem;
+  height: 76rem;
+  overflow: hidden;
+  background: var(--red);
+  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+}
+
+/* ===== Look closer ===== */
+.closer {
+  position: absolute;
+  left: 11rem;
+  top: 413rem;
+  z-index: 3;
+  font-weight: 800;
+  font-size: 15.5rem;
+  line-height: 0.95;
+  letter-spacing: -0.5rem;
+}
+
+.closer span {
+  color: transparent;
+  -webkit-text-stroke: 0.2rem var(--red);
+}
+
+.closer-text b {
+  color: #fff;
+  font-weight: 600;
+}
+
+.closer-text {
+  position: absolute;
+  left: 11.6rem;
+  top: 449rem;
+  z-index: 3;
+  width: 52rem;
+  color: #c9ccd2;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+/* ===== နောက်ဆုံး ပိုစတာ ===== */
+.finale {
+  position: absolute;
+  left: 0;
+  top: 486rem;
+  z-index: 1;
+  width: 153.6rem;
+  height: 137rem;
+  overflow: hidden;
+  -webkit-mask: linear-gradient(transparent, #000 18%, #000 82%, transparent);
+  mask: linear-gradient(transparent, #000 18%, #000 82%, transparent);
+}
+
+.finale img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.55;
+  filter: blur(4rem) saturate(1.3);
+  transform: scale(1.1);
+}
+
+.back-top {
+  position: absolute;
+  left: 68.6rem;
+  top: 627rem;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: #fff;
+  font-size: 2.5rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.back-top img {
+  display: block;
+  width: 1.6rem;
+  height: 1.5rem;
+  transform: rotate(90deg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .p,
+  .marquee {
+    animation: none;
+  }
+}

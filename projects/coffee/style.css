@@ -1,0 +1,1042 @@
+/* Figma အကျယ် 1440px: 1rem = design ရဲ့ 10px */
+:root {
+  --green: #2e8b62;
+  --deep: #1b5e45;
+  --cream: #f5f1e8;
+  --mint: #dceee3;
+  --ink: #2a2723;
+  --muted: #6f6a62;
+  --sun: #f7bc55;
+  --mocha: #5b4b40;
+  --zen: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", sans-serif;
+  --outfit: Outfit, sans-serif;
+  --shadow: 0 1rem 3rem rgba(41, 36, 26, 0.07);
+}
+
+html {
+  font-size: calc(100vw / 144);
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--zen);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol {
+  list-style: none;
+}
+
+i {
+  font-style: normal;
+}
+
+.cover {
+  display: block;
+  object-fit: cover;
+}
+
+.abs {
+  position: absolute;
+  display: block;
+}
+
+/* ===== စာလုံးပုံစံတွေ ===== */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 5.2rem;
+  line-height: 6.6rem;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  text-align: center;
+}
+
+h2.left,
+.story-text h2 {
+  text-align: left;
+}
+
+h3 {
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+  white-space: nowrap;
+}
+
+h4 {
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+em {
+  font-style: normal;
+  color: var(--green);
+}
+
+.label {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.048rem;
+  white-space: nowrap;
+}
+
+.lead {
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+
+.body {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.small {
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+}
+
+.jp-small {
+  display: block;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  letter-spacing: 0.026rem;
+  color: var(--muted);
+}
+
+.jp-small.green {
+  color: var(--green);
+}
+
+.num {
+  font-family: var(--outfit);
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.168rem;
+  color: var(--green);
+  white-space: nowrap;
+}
+
+.nunito {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+}
+
+.outfit {
+  font-family: var(--outfit);
+  font-weight: 600;
+}
+
+.green {
+  color: var(--green);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.mint {
+  color: var(--mint);
+}
+
+.sun {
+  color: var(--sun);
+}
+
+.deep {
+  color: var(--deep);
+}
+
+.white {
+  color: #fff;
+}
+
+.w720 {
+  width: 72rem;
+  text-align: center;
+}
+
+.w240 {
+  width: 24rem;
+}
+
+/* ===== Layout အကူတွေ ===== */
+.row-16 {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.row-24 {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.4rem;
+}
+
+.full {
+  width: 100%;
+}
+
+.col-24 {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.col-12 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.col-8 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.col-6 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.grow {
+  flex: 1 0 0;
+  min-width: 0.1rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.sec {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5.6rem;
+  padding: 9.6rem 12rem;
+  overflow: hidden;
+}
+
+/* ===== ခလုတ် ===== */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 1.4rem 2.8rem;
+  background: var(--green);
+  border-radius: 99.9rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.056rem;
+  white-space: nowrap;
+  transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-0.2rem);
+}
+
+.btn.line {
+  padding: 1.3rem 2.6rem;
+  background: none;
+  border: 0.2rem solid var(--green);
+  color: var(--green);
+}
+
+.white-btn {
+  background: #fff;
+  color: var(--green);
+}
+
+.col-12 .btn {
+  width: 100%;
+}
+
+.btn.line-white {
+  padding: 1.3rem 2.6rem;
+  background: none;
+  border: 0.2rem solid #fff;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 4.4rem;
+  height: 4.4rem;
+  background: #fff;
+  border-radius: 99.9rem;
+  color: var(--green);
+  font-family: var(--outfit);
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+.arrow.big {
+  width: 4.8rem;
+  height: 4.8rem;
+}
+
+.enjoy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0.8rem 3.6rem 1.2rem;
+  background: var(--green);
+  border-radius: 99.9rem;
+  color: #fff;
+  font-family: Yellowtail, cursive;
+  font-size: 3.6rem;
+  line-height: 4.4rem;
+  white-space: nowrap;
+}
+
+/* ===== 1. Nav ===== */
+.nav {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 8.8rem;
+  padding-inline: 12rem;
+  background: #fff;
+  filter: drop-shadow(0 1rem 1.5rem rgba(41, 36, 26, 0.07));
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 4.4rem;
+  height: 4.4rem;
+  background: var(--green);
+  border-radius: 2.2rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2.42rem;
+  line-height: 1;
+  letter-spacing: 0.0484rem;
+}
+
+.mark.inverse {
+  background: #fff;
+  color: var(--green);
+}
+
+.brand-name {
+  display: block;
+  font-family: var(--outfit);
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  letter-spacing: 0.12rem;
+  white-space: nowrap;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 3.6rem;
+}
+
+.links .now,
+.links a:hover {
+  color: var(--green);
+}
+
+/* ===== 2. Hero ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  padding: 5.6rem 12rem 7.2rem;
+}
+
+.hero-text {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 2.4rem;
+  min-width: 0.1rem;
+}
+
+.tagline {
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 3.2rem;
+  letter-spacing: 0.044rem;
+  color: var(--green);
+}
+
+.hero-visual {
+  position: relative;
+  flex: none;
+  width: 64rem;
+  height: 60rem;
+}
+
+.hero-img {
+  position: absolute;
+  left: 8rem;
+  top: 1rem;
+  width: 56rem;
+  height: 58rem;
+  border-radius: 5.6rem;
+}
+
+.next {
+  position: absolute;
+  left: 0;
+  top: 47rem;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 2.8rem 2rem 2.4rem;
+  background: var(--green);
+  border-radius: 2.4rem;
+  box-shadow: var(--shadow);
+}
+
+.next > span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.next b {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  white-space: nowrap;
+}
+
+.enjoy-hero {
+  position: absolute;
+  left: 43rem;
+  top: -0.6rem;
+  font-size: 4.4rem;
+  line-height: 5.2rem;
+}
+
+/* ===== 3. Philosophy ===== */
+.philosophy {
+  padding-top: 4rem;
+}
+
+.bento {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.4rem;
+  width: 100%;
+}
+
+.bento-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding: 2.8rem;
+  background: #fff;
+  border-radius: 2.8rem;
+  box-shadow: var(--shadow);
+}
+
+.c1 {
+  flex-direction: column;
+  gap: 2rem;
+  width: 58.8rem;
+  height: 56rem;
+}
+
+.c1 img {
+  width: 100%;
+  height: 33rem;
+  border-radius: 2rem;
+}
+
+.c2 {
+  align-items: center;
+  gap: 2rem;
+  width: 58.8rem;
+  height: 26.8rem;
+}
+
+.c2 img {
+  flex: none;
+  width: 22rem;
+  height: 21.2rem;
+  border-radius: 2rem;
+}
+
+.c3 {
+  flex-direction: column;
+  gap: 1.4rem;
+  width: 28.2rem;
+  height: 26.8rem;
+}
+
+.c3 img {
+  width: 100%;
+  height: 10.8rem;
+  border-radius: 1.6rem;
+}
+
+.c4 {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 28.2rem;
+  height: 26.8rem;
+  background: var(--green);
+  color: #fff;
+}
+
+.kanji {
+  position: absolute;
+  left: 12rem;
+  top: 2rem;
+  font-weight: 700;
+  font-size: 18rem;
+  line-height: 1;
+  letter-spacing: 0.36rem;
+  opacity: 0.12;
+  white-space: nowrap;
+}
+
+/* ===== 4. Menu ===== */
+.mocha {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 40rem;
+  background: var(--mocha);
+}
+
+.menu .head,
+.menu .row-24,
+.menu .center {
+  position: relative;
+}
+
+.product {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  min-width: 0.1rem;
+  padding: 2.4rem;
+  background: #fff;
+  border-radius: 2.8rem;
+  filter: drop-shadow(0 1rem 1.5rem rgba(41, 36, 26, 0.07));
+  text-align: center;
+}
+
+.product > * {
+  width: 100%;
+}
+
+.product img {
+  height: 30rem;
+  border-radius: 2rem;
+}
+
+.menu .row-24 {
+  align-items: stretch;
+}
+
+.product .price {
+  margin-top: auto;
+}
+
+.price {
+  font-family: var(--outfit);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: var(--green);
+}
+
+/* ===== 5. Banners ===== */
+.banner {
+  position: relative;
+  flex: none;
+  width: 58.8rem;
+  height: 52rem;
+  overflow: hidden;
+  background: var(--mint);
+  border-radius: 4rem;
+}
+
+.banner-img {
+  position: absolute;
+  top: 6.4rem;
+  width: 26.4rem;
+  height: 45.6rem;
+  border-radius: 4rem;
+}
+
+.banner-text {
+  position: absolute;
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.6rem;
+}
+
+.badges {
+  display: flex;
+  align-items: center;
+}
+
+.topping {
+  margin-right: -1rem;
+  padding: 1rem 2.4rem 1rem 1.6rem;
+  background: var(--sun);
+  border-radius: 99.9rem;
+  color: var(--deep);
+}
+
+.tag-price {
+  position: relative;
+  padding: 0.8rem 2.2rem 0.8rem 1.8rem;
+  background: var(--green);
+  border-radius: 99.9rem;
+  color: #fff;
+  font-family: var(--outfit);
+  font-weight: 600;
+  font-size: 2.8rem;
+  line-height: 3.6rem;
+}
+
+/* ===== 6. Space ===== */
+.space {
+  padding-top: 4rem;
+}
+
+.r32 {
+  flex: none;
+  border-radius: 3.2rem;
+}
+
+/* ===== 7. Story ===== */
+.story-wrap {
+  padding: 0 12rem 9.6rem;
+}
+
+.story {
+  display: flex;
+  height: 56rem;
+  overflow: hidden;
+  background: var(--deep);
+  border-radius: 4.8rem;
+}
+
+.story-text {
+  position: relative;
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2.4rem;
+  min-width: 0.1rem;
+  height: 100%;
+  overflow: hidden;
+  padding: 0 5.6rem 0 7.2rem;
+}
+
+.kanji2 {
+  position: absolute;
+  left: 33rem;
+  top: 33rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: 22rem;
+  line-height: 1;
+  letter-spacing: 0.44rem;
+  opacity: 0.08;
+}
+
+.story-img {
+  flex: none;
+  width: 56rem;
+  height: 56rem;
+}
+
+/* ===== 8. Journal ===== */
+.journal {
+  display: flex;
+  flex-direction: column;
+  gap: 5.6rem;
+  padding: 0 12rem 9.6rem;
+}
+
+.post {
+  flex: 1 0 0;
+  min-width: 0.1rem;
+  min-height: 42.6rem;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 2.8rem;
+  box-shadow: var(--shadow);
+}
+
+.post img {
+  width: 100%;
+  height: 24rem;
+}
+
+.post-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.4rem;
+  padding: 2.4rem 2.8rem 2.8rem;
+}
+
+.pill {
+  padding: 0.6rem 1.4rem;
+  background: var(--mint);
+  border-radius: 99.9rem;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  white-space: nowrap;
+}
+
+/* ===== 9. Location ===== */
+.visit {
+  background: var(--mint);
+}
+
+.map {
+  position: relative;
+  flex: none;
+  width: 76rem;
+  height: 56rem;
+  overflow: hidden;
+  background: #e6f0e7;
+  border-radius: 3.2rem;
+}
+
+.road {
+  position: absolute;
+  display: block;
+  background: #fff;
+}
+
+.pin {
+  position: absolute;
+  display: block;
+  width: 8.2rem;
+  height: 8.2rem;
+}
+
+.pin-active {
+  position: absolute;
+  left: 31.6rem;
+  top: 31rem;
+  display: block;
+  width: 9rem;
+  height: 9rem;
+}
+
+.map-label {
+  position: absolute;
+  left: 30rem;
+  top: 28rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 1.2rem 1.6rem;
+  background: #fff;
+  border-radius: 1.6rem;
+  box-shadow: var(--shadow);
+  white-space: nowrap;
+}
+
+.search {
+  position: absolute;
+  top: 48.8rem;
+  padding: 1.4rem 2.2rem;
+  background: #fff;
+  border-radius: 99.9rem;
+  box-shadow: var(--shadow);
+  white-space: nowrap;
+}
+
+.panel {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2.4rem;
+  width: 41.6rem;
+  height: 56rem;
+  overflow: hidden;
+  padding: 4.4rem 4rem;
+  background: var(--deep);
+  border-radius: 3.2rem;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+}
+
+.hour {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 1.4rem;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* ===== 10. Rewards ===== */
+.rewards {
+  display: flex;
+  align-items: center;
+  gap: 9.6rem;
+  padding: 9.6rem 12rem;
+}
+
+.phones {
+  position: relative;
+  flex: none;
+  width: 46rem;
+  height: 58rem;
+}
+
+.phone {
+  position: absolute;
+  background: var(--ink);
+  border-radius: 4.8rem;
+  filter: drop-shadow(0 1rem 1.5rem rgba(41, 36, 26, 0.07));
+}
+
+.screen {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  overflow: hidden;
+  border-radius: 3.8rem;
+}
+
+.kanji3 {
+  position: absolute;
+  font-weight: 700;
+  font-size: 7.6rem;
+  line-height: 1;
+  letter-spacing: 0.152rem;
+  white-space: nowrap;
+}
+
+.phone-name {
+  position: absolute;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.8rem;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.rewards-text {
+  display: flex;
+  flex: 1 0 0;
+  flex-direction: column;
+  gap: 3.2rem;
+  min-width: 0.1rem;
+}
+
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.steps li {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.steps i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  width: 3.6rem;
+  height: 3.6rem;
+  background: var(--mint);
+  border-radius: 99.9rem;
+  color: var(--green);
+  font-family: var(--outfit);
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+.steps li > span {
+  display: flex;
+  flex-direction: column;
+}
+
+.steps b {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  white-space: nowrap;
+}
+
+.store {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2.4rem;
+  background: var(--ink);
+  border-radius: 1.4rem;
+  white-space: nowrap;
+}
+
+.store b {
+  color: #fff;
+  font-size: 2rem;
+  line-height: 2.8rem;
+}
+
+/* ===== 11. Footer ===== */
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 5.6rem;
+  padding: 8.8rem 12rem 4rem;
+  background: var(--deep);
+  color: #fff;
+}
+
+.foot-cols {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.foot-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 38rem;
+}
+
+.foot-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  white-space: nowrap;
+}
+
+.foot-nav a:hover {
+  color: var(--sun);
+}
+
+.foot-visit {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  width: 28rem;
+  white-space: nowrap;
+}
+
+.insta {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding-top: 0.6rem;
+}
+
+.insta img {
+  display: block;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.foot-big {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 6.2rem;
+}
+
+.foot-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.4rem;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+  color: var(--mint);
+  font-size: 1.4rem;
+  line-height: 2.2rem;
+  white-space: nowrap;
+}

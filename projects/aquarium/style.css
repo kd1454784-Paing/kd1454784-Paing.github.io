@@ -1,0 +1,237 @@
+/* Figma အကျယ် 1536px: 1rem = design ရဲ့ 10px */
+html {
+  font-size: calc(100vw / 153.6);
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #181818;
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page {
+  position: relative;
+  width: 153.6rem;
+  height: 499.2rem;
+  overflow: hidden;
+  background: #181818;
+}
+
+.site {
+  position: absolute;
+  left: 0;
+  top: 105.8rem;
+  width: 153.6rem;
+  height: 378.4rem;
+  overflow: hidden;
+  background: #fff;
+  color: #fff;
+  font-family: "Hiragino Kaku Gothic Pro", "Noto Sans JP", sans-serif;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+}
+
+.abs,
+.t {
+  position: absolute;
+}
+
+img.abs {
+  display: block;
+  max-width: none;
+  object-fit: cover;
+}
+
+.t {
+  white-space: nowrap;
+}
+
+.c {
+  transform: translateX(-50%);
+}
+
+.center {
+  text-align: center;
+}
+
+.clip {
+  overflow: hidden;
+}
+
+/* Figma ထဲက font အလေးချိန်တွေ */
+.k {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 900;
+}
+
+.w3 {
+  font-family: "Hiragino Kaku Gothic Pro", "Noto Sans JP", sans-serif;
+  font-weight: 300;
+}
+
+.w6 {
+  font-family: "Hiragino Kaku Gothic Pro", "Noto Sans JP", sans-serif;
+  font-weight: 600;
+}
+
+.w8 {
+  font-family: "Hiragino Kaku Gothic StdN", "Noto Sans JP", sans-serif;
+  font-weight: 800;
+}
+
+.cyan {
+  color: #0fe;
+}
+
+.pill {
+  position: absolute;
+  display: block;
+  border-radius: 1.9rem;
+  transition: filter 0.25s ease;
+}
+
+.pill:hover {
+  filter: brightness(1.25);
+}
+
+.solid {
+  background: #034890;
+}
+
+.solid2 {
+  background: #0d4391;
+}
+
+.line-w {
+  border: 0.2rem solid #fff;
+}
+
+.line-b {
+  border: 0.2rem solid #0d4391;
+}
+
+.stat {
+  position: absolute;
+  top: 71.1rem;
+  width: 13.4rem;
+  height: 12.4rem;
+  background: #238af5;
+  border-radius: 3.3rem;
+  opacity: 0.27;
+}
+
+.news-card {
+  position: absolute;
+  background: #001534;
+  border-radius: 1.5rem;
+  opacity: 0.61;
+}
+
+.tag {
+  position: absolute;
+  border: 0.1rem solid #71e5ff;
+  border-radius: 0.5rem;
+}
+
+.more {
+  font-family: Inter, "Noto Sans JP", sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #0fe;
+}
+
+/* စျေးနှုန်းဇယား: font မတူလည်း ကော်လံ မလွဲအောင် */
+.price {
+  position: absolute;
+  left: 24.3rem;
+  display: grid;
+  grid-template-columns: 31.8rem 7.3rem auto;
+  font-size: 1.5rem;
+  line-height: 1.04;
+  white-space: nowrap;
+}
+
+.hr {
+  position: absolute;
+  display: block;
+  width: 50.0591rem;
+  height: 0.1rem;
+  background: #fff;
+}
+
+.map-bg {
+  left: -7rem;
+  top: 246.9rem;
+  width: 163.5rem;
+  height: 80.5rem;
+  overflow: hidden;
+  opacity: 0.19;
+}
+
+.map-bg img {
+  left: -10rem;
+  top: -11.5rem;
+  width: 177.1rem;
+  height: 99.6rem;
+}
+
+.foot-list {
+  font-size: 1.6rem;
+  letter-spacing: -0.032rem;
+}
+
+.foot-list h3 {
+  margin-bottom: 3.9rem;
+  font-weight: inherit;
+  font-size: 2.4rem;
+  color: #0fe;
+}
+
+.foot-list p {
+  margin-bottom: 1.936rem;
+}
+
+.jelly {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jelly img {
+  display: block;
+  flex: none;
+  max-width: none;
+  mix-blend-mode: screen;
+}
+
+.back-top {
+  position: absolute;
+  left: 68.6rem;
+  top: 489.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-family: Inter, Arial, sans-serif;
+  font-size: 2.5rem;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.back-top img {
+  display: block;
+  width: 1.6rem;
+  height: 1.5rem;
+  transform: rotate(90deg);
+}

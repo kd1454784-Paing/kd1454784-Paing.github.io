@@ -1,0 +1,209 @@
+/* Figma မှာ အကျယ် 1536px နဲ့ ဆွဲထားလို့ 1rem = design ရဲ့ 10px အဖြစ် တွက်ထားတာ
+   ဒါကြောင့် ဘယ် screen မှာမဆို အချိုးမပျက်ဘဲ စာနဲ့ vector တွေ ကြည်နေမယ် */
+html {
+  font-size: calc(100vw / 153.6);
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #181818;
+  font-family: Inter, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+.page {
+  position: relative;
+  width: 153.6rem;
+  height: 958.6rem;
+  overflow: hidden;
+  background: #181818;
+}
+
+.photo {
+  position: absolute;
+  display: block;
+  object-fit: cover;
+}
+
+.white {
+  position: absolute;
+  left: -3.1rem;
+  width: 161.8rem;
+  height: 102rem;
+  background: #fff;
+}
+
+/* ===== Logo တည်ဆောက်ပုံ ===== */
+.logo {
+  position: absolute;
+  left: -11.7rem;
+  top: 325.7rem;
+  width: 176.9rem;
+  height: 107.9rem;
+  overflow: hidden;
+}
+
+.logo-grid {
+  position: absolute;
+  inset: 0 -12.66% 0 -8.93%;
+  -webkit-mask: url("assets/g.svg") no-repeat 24.3rem 1.2034rem / 158rem 103.805rem;
+  mask: url("assets/g.svg") no-repeat 24.3rem 1.2034rem / 158rem 103.805rem;
+}
+
+.logo-grid img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.v,
+.v i {
+  position: absolute;
+  display: block;
+}
+
+.v img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.note {
+  position: absolute;
+  font-family: Skia, Inter, Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 2.3021rem;
+  color: #08141d;
+  white-space: nowrap;
+}
+
+.note-left {
+  left: 23.2435rem;
+  top: 43.7rem;
+}
+
+.note-right {
+  right: 20.6rem;
+  top: 41.4rem;
+  text-align: right;
+}
+
+/* ===== ပိုစတာပုံ ===== */
+.poster {
+  position: absolute;
+  left: -5.6rem;
+  top: 722.7rem;
+  width: 164.5166rem;
+  height: 109.644rem;
+  -webkit-mask: url("assets/rect.svg") no-repeat 5.1969rem 0.5574rem / 155.0021rem 109.5014rem;
+  mask: url("assets/rect.svg") no-repeat 5.1969rem 0.5574rem / 155.0021rem 109.5014rem;
+}
+
+.poster img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* ===== အရောင် ၃ မျိုး ===== */
+.colors {
+  position: absolute;
+  left: 0;
+  top: 429.8rem;
+  width: 153.6rem;
+  height: 108.7rem;
+  overflow: hidden;
+  color: #fff;
+}
+
+.band {
+  position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+}
+
+.colors h3 {
+  position: absolute;
+  left: 5.1435rem;
+  font-size: 1.655rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+.body {
+  position: absolute;
+  left: 5.1435rem;
+  font-family: Skia, Inter, Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 2.554rem;
+  white-space: nowrap;
+}
+
+.hex {
+  position: absolute;
+  font-size: 1.908rem;
+  white-space: nowrap;
+}
+
+.colors .dark {
+  color: #00050d;
+}
+
+/* ===== Color concept ===== */
+.concept-title {
+  position: absolute;
+  left: calc(50% - 27.7rem);
+  top: 556rem;
+  width: 55.5rem;
+  font-size: 6.4rem;
+  font-weight: 400;
+  color: #000;
+  white-space: nowrap;
+}
+
+.concept {
+  position: absolute;
+  left: 76.8rem;
+  color: #000;
+  text-align: center;
+  white-space: nowrap;
+  transform: translateX(-50%);
+}
+
+.concept-lg {
+  font-size: 3.2rem;
+}
+
+.concept-sm {
+  font-size: 2.4rem;
+}
+
+/* ===== Back to top ===== */
+.back-top {
+  position: absolute;
+  left: 68.6rem;
+  top: 948.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 2.5rem;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.back-top img {
+  display: block;
+  width: 1.6rem;
+  height: 1.5rem;
+  transform: rotate(90deg);
+}
