@@ -398,6 +398,12 @@ body {
   font-weight: bold;
 }
 
+.sns-icon i img {
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+
 .sns-icon:hover {
   background: rgba(255, 255, 255, 0.12);
 }
