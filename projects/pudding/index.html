@@ -25,6 +25,41 @@
       .inter { font-family: Inter, sans-serif; }
       .back-top { position: absolute; left: 68.6rem; top: 264.2rem; display: flex; align-items: center; gap: 0.7rem; font-family: Inter, sans-serif; font-size: 2.5rem; color: #fff; text-decoration: none; white-space: nowrap; }
       .back-top img { display: block; width: 1.6rem; height: 1.5rem; transform: rotate(90deg); }
+      .practice-note { position: absolute; left: 0; top: 268.2rem; width: 153.6rem; font-family: Inter, "Kosugi Maru", sans-serif; font-size: 1.3rem; line-height: 1.6; color: #bdbdbd; text-align: center; }
+      .m { display: none; }
+      @media (max-width: 700px) {
+        html { font-size: calc(100vw / 39); }
+        .page { display: none; }
+        .m { display: block; background: #ffe47e; color: #823710; font-family: "Hiragino Maru Gothic ProN", "Kosugi Maru", sans-serif; font-size: 1.5rem; line-height: 1.8; }
+        .m-head { display: flex; align-items: center; justify-content: space-between; padding: 1.6rem 2rem; background: #823710; color: #fff; }
+        .m-head b { font-family: "Luckiest Guy", sans-serif; font-size: 1.8rem; font-weight: 400; }
+        .m-head a { color: #fff; text-decoration: none; font-family: Itim, sans-serif; }
+        .m-hero { padding: 3.2rem 2rem 1rem; text-align: center; }
+        .m-title { font-size: 8rem; line-height: 1; letter-spacing: 0.1rem; }
+        .m-hero img { display: block; width: 100%; margin-top: -1rem; }
+        .m-catch { margin-top: 1.2rem; font-size: 2rem; font-weight: 700; line-height: 1.5; }
+        .m-sec { padding: 4rem 2rem; }
+        .m-sec h2 { font-size: 2.6rem; font-weight: 700; line-height: 1.4; text-align: center; }
+        .m-sub { margin-bottom: 2rem; color: #ff755c; text-align: center; }
+        .m-card { position: relative; margin-top: 2rem; padding: 0 2rem 2.4rem; border-radius: 2rem; text-align: center; }
+        .m-card img { display: block; width: 88%; margin: 0 auto; padding-top: 1.6rem; }
+        .c1 { background: #fdf4e0; } .c2 { background: #eaf5d3; } .c3 { background: #fde9e9; } .c4 { background: #fbe2cf; }
+        .m-tag { position: absolute; left: 1.2rem; top: 1.2rem; padding: 0 1.2rem; background: #fff; border-radius: 2rem; font-size: 1.2rem; }
+        .m-card h3 { margin-top: 0.8rem; font-size: 2rem; line-height: 1.4; }
+        .m-en { margin-bottom: 0.6rem; color: #ff755c; font-size: 1.3rem; }
+        .m-price { margin-top: 0.8rem; color: #623305; font-size: 2rem; font-weight: 700; }
+        .m-cream { background: #fef7e4; }
+        .m-ingredients { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; list-style: none; font-size: 1.3rem; text-align: center; }
+        .m-ingredients li { padding: 1.6rem 0.8rem; background: #fff; border: 0.1rem solid #ffbc00; border-radius: 2rem; }
+        .m-ingredients img { display: block; width: 100%; height: 10rem; margin-bottom: 0.8rem; object-fit: contain; }
+        .m-ingredients b { display: block; font-size: 1.5rem; }
+        .m-pink { background: #fde0e2; }
+        .m-pink img { display: block; width: 70%; margin: 0 auto 1.6rem; }
+        .m-foot { padding: 3.2rem 2rem 9rem; background: #823710; color: #fff; text-align: center; }
+        .m-foot p { font-size: 1.8rem; font-weight: 700; }
+        .m-foot small { display: block; margin-top: 1rem; font-size: 1.1rem; line-height: 1.6; }
+        .m-legal { color: #f4d9b8; }
+      }
     </style>
   </head>
   <body id="top">
@@ -207,7 +242,79 @@
       <img class="d" style="left:0rem;top:126.2rem;width:4.3rem;height:0.55rem" src="assets/73-1014.svg" alt="" loading="lazy" />
       <img class="d" style="left:143.8rem;top:126.2rem;width:9.8rem;height:0.5rem" src="assets/73-1080.svg" alt="" loading="lazy" />
       <a class="back-top" href="#top"><img src="assets/poly.svg" alt="" />Back to Top</a>
+      <p class="practice-note">学校の課題として制作した非商用の作品です。ポムポムプリンの著作権は株式会社サンリオに帰属し、同社とは関係ありません。<br />Non-commercial school project. Pompompurin is © Sanrio Co., Ltd. Not affiliated with Sanrio.</p>
     </main>
+    <!-- ===== ဖုန်းအတွက် version (screen 700px အောက်မှာပဲ ပေါ်မယ်) ===== -->
+    <div class="m">
+      <header class="m-head"><b>Pompompurin Pudding</b><a href="#m-flavors">MENU</a></header>
+      <section class="m-hero">
+        <p class="m-title lucky"><span style="color:#ff7977">P</span><span style="color:#ff755c">U</span><span style="color:#ffbc00">D</span><span style="color:#5ad7ee">D</span><span style="color:#c8d94a">I</span><span style="color:#5ad7ee">N</span><span style="color:#c893e0">G</span></p>
+        <img src="assets/73-530.svg" alt="ポムポムプリンとカラメルプリン" />
+        <p class="m-catch">どんな気分のときも、<br />とっておきのプリンを。</p>
+      </section>
+      <section class="m-sec">
+        <h2>ぷるぷる、おいしい幸せ。</h2>
+        <p class="m-sub">Find your little moment of happiness.</p>
+        <p>国産の新鮮な卵と、北海道産の濃厚な牛乳を贅沢に使用。なめらかな食感が生み出す極上のハーモニーをお楽しみください。自分へのご褒美にも、大切な方へのギフトにもぴったりです。</p>
+      </section>
+      <section class="m-sec" id="m-flavors">
+        <h2>お気に入りの味を見つけよう</h2>
+        <p class="m-sub">Find your favorite flavor!</p>
+        <article class="m-card c1">
+          <img src="assets/73-859.svg" alt="なめらかカラメルプリン" loading="lazy" />
+          <span class="m-tag">Original</span>
+          <h3>なめらかカラメルプリン</h3>
+          <p class="m-en">Classic Original Pudding</p>
+          <p>やさしい甘さと、とろける食感。定番のなめらかプリンです。</p>
+          <p class="m-price">¥380（税込）</p>
+        </article>
+        <article class="m-card c2">
+          <img src="assets/73-864.svg" alt="宇治抹茶プリン" loading="lazy" />
+          <span class="m-tag">Matcha</span>
+          <h3>宇治抹茶プリン</h3>
+          <p class="m-en">Rich Matcha Pudding</p>
+          <p>京都産の宇治抹茶を使用。ほろにがく、上品な味わいです。</p>
+          <p class="m-price">¥420（税込）</p>
+        </article>
+        <article class="m-card c3">
+          <img src="assets/73-806.svg" alt="完熟いちごプリン" loading="lazy" />
+          <span class="m-tag">Strawberry</span>
+          <h3>完熟いちごプリン</h3>
+          <p class="m-en">Sweet Strawberry Pudding</p>
+          <p>完熟いちごの甘酸っぱさとやさしいミルクの味わい。</p>
+          <p class="m-price">¥420（税込）</p>
+        </article>
+        <article class="m-card c4">
+          <img src="assets/73-840.svg" alt="濃厚チョコレートプリン" loading="lazy" />
+          <span class="m-tag">Chocolate</span>
+          <h3>濃厚チョコレートプリン</h3>
+          <p class="m-en">Rich Chocolate Pudding</p>
+          <p>カカオの香り広がるなめらかで濃厚な味わい。</p>
+          <p class="m-price">¥450（税込）</p>
+        </article>
+      </section>
+      <section class="m-sec m-cream">
+        <h2>こだわりの素材</h2>
+        <p class="m-sub">Special Ingredients</p>
+        <ul class="m-ingredients">
+          <li><img src="assets/73-916.svg" alt="国産たまごのイラスト" loading="lazy" /><b>国産たまご</b>コクのある味わい</li>
+          <li><img src="assets/73-920.svg" alt="北海道産牛乳のイラスト" loading="lazy" /><b>北海道産牛乳</b>まろやかな口どけ</li>
+          <li><img src="assets/73-924.svg" alt="カラメルソースのイラスト" loading="lazy" /><b>特製カラメルソース</b>ほろ苦く、深いコク</li>
+          <li><img src="assets/73-928.svg" alt="宇治抹茶のイラスト" loading="lazy" /><b>宇治抹茶</b>香り高い上品な風味</li>
+        </ul>
+      </section>
+      <section class="m-sec m-pink">
+        <img src="assets/73-965.svg" alt="プリン店のイラスト" loading="lazy" />
+        <h2>店舗案内</h2>
+        <p class="m-sub">Shop Information</p>
+        <p>〒150-0042 東京都渋谷区宇田川町12-3 渋谷ビル1F<br />営業時間 10:00 - 21:00（年中無休）</p>
+      </section>
+      <footer class="m-foot">
+        <p>ちいさなプリンで、大きなしあわせ。</p>
+        <small>© 2025 Pompompurin Pudding. All rights reserved.</small>
+        <small class="m-legal">学校の課題として制作した非商用の作品です。ポムポムプリンの著作権は株式会社サンリオに帰属し、同社とは関係ありません。<br />Non-commercial school project. Pompompurin is © Sanrio Co., Ltd. Not affiliated with Sanrio.</small>
+      </footer>
+    </div>
     <script src="../back.js"></script>
   </body>
 </html>

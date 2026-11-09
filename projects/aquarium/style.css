@@ -235,3 +235,71 @@ img.abs {
   height: 1.5rem;
   transform: rotate(90deg);
 }
+
+/* ===== ဖုန်းအတွက် version ===== */
+.m {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  html { font-size: calc(100vw / 39); }
+  .page { display: none; }
+
+  .m {
+    display: block;
+    background: #001027;
+    color: #fff;
+    font-family: "Noto Sans JP", "Hiragino Kaku Gothic Pro", sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.7;
+  }
+  .m-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.4rem 2rem; background: #040c11; }
+  .m-head b { display: block; font-size: 1.9rem; font-weight: 900; line-height: 1.3; }
+  .m-head small { font-size: 1rem; font-weight: 700; }
+  .m-pill { display: inline-block; padding: 1rem 1.8rem; background: #034890; border: 0.2rem solid #034890; border-radius: 3.9rem; color: #fff; font-size: 1.3rem; font-weight: 900; line-height: 1.3; white-space: nowrap; }
+  .m-pill.line { background: none; border-color: #fff; }
+
+  .m-hero { padding: 7rem 2rem 4rem; background: linear-gradient(rgba(0, 16, 39, 0.25), #001027), url("assets/hero.jpg") center / cover; }
+  .m-hero h1 { font-size: 5.2rem; font-weight: 900; line-height: 1.2; }
+  .m-hero > p { margin-top: 1.6rem; color: #dadada; }
+  .m-btns { display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 2.4rem; }
+  .m-stats { display: flex; gap: 1.2rem; margin-top: 3.2rem; }
+  .m-stats p { flex: 1; padding: 1.4rem; background: rgba(35, 138, 245, 0.27); border-radius: 2.4rem; font-size: 1.3rem; font-weight: 900; text-align: center; }
+  .m-stats b { display: block; font-size: 3.2rem; line-height: 1.2; }
+
+  .m-sec { position: relative; overflow: hidden; padding: 4.8rem 2rem 1rem; }
+  .m-sec > * { position: relative; }
+  .m-sec > .m-jelly { position: absolute; display: block; mix-blend-mode: screen; pointer-events: none; }
+  .j-a { right: -5rem; top: 13rem; width: 15rem; transform: rotate(-16deg); }
+  .j-b { left: -5rem; top: 44rem; width: 14rem; transform: rotate(40deg); }
+  .j-c { right: -6rem; top: 1rem; width: 18rem; transform: rotate(26deg); }
+  .m-cave { background: linear-gradient(rgba(0, 16, 39, 0.72), rgba(0, 16, 39, 0.72)), url("assets/cave.jpg") center / cover; }
+  .m-map { background: linear-gradient(rgba(4, 9, 13, 0.72), rgba(4, 9, 13, 0.72)), url("assets/map.jpg") center / cover; padding-bottom: 4.8rem; }
+  .m-ray { display: block; width: 100%; margin: 1.6rem 0 -1rem; }
+  .m-en { font-weight: 600; text-align: center; }
+  .m-sec h2 { margin-bottom: 2.4rem; color: #0fe; font-size: 2.4rem; font-weight: 900; line-height: 1.35; text-align: center; }
+  .m-sec h2 span { color: inherit; }
+  .m-card { margin-top: 1.4rem; padding: 2rem; background: rgba(3, 40, 93, 0.82); border-radius: 1.5rem; }
+  .m-card.center { text-align: center; }
+  .m-card h3 { margin-bottom: 0.8rem; font-size: 1.9rem; font-weight: 800; line-height: 1.4; }
+  .m-card.center .m-pill { margin-top: 1.6rem; }
+  .m-meta { display: flex; align-items: center; gap: 1.2rem; margin-bottom: 1rem; font-size: 1.3rem; font-weight: 600; }
+  .m-meta span { padding: 0.1rem 0.8rem; border: 0.1rem solid #71e5ff; border-radius: 0.5rem; }
+
+  .m-table { width: 100%; border-collapse: collapse; overflow: hidden; background: #03285d; border-radius: 0.8rem; font-size: 1.3rem; }
+  .m-table th { padding: 1rem 0.8rem; background: #0d4391; font-weight: 600; text-align: left; }
+  .m-table td { padding: 1rem 0.8rem; border-top: 0.1rem solid rgba(255, 255, 255, 0.2); }
+
+  .m-list { margin-top: 1rem; list-style: none; }
+  .m-list li { padding: 1rem 0; border-top: 0.1rem solid rgba(255, 255, 255, 0.25); }
+  .m-list b { display: block; color: #0fe; font-weight: 600; }
+
+  .m-foot { position: relative; overflow: hidden; padding: 3.2rem 2rem 25rem; background: #040c11; }
+  .m-foot img { position: absolute; display: block; }
+  .m-seal { right: 0; bottom: 7rem; width: 11rem; }
+  .m-crab { left: 2rem; bottom: 7rem; width: 10rem; }
+  .m-hermit { left: 14rem; bottom: 7rem; width: 6rem; }
+  .m-foot b { font-size: 2rem; font-weight: 900; }
+  .m-foot p { margin: 1rem 0 2rem; font-size: 1.4rem; }
+  .m-foot small { font-size: 1.1rem; color: #bdbdbd; }
+}

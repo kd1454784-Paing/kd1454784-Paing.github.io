@@ -1040,3 +1040,91 @@ em {
   line-height: 2.2rem;
   white-space: nowrap;
 }
+
+/* ===== ဖုန်းအတွက် layout (Laptop ထဲက website ကို မထိဘူး) ===== */
+@media (max-width: 700px) {
+  html { font-size: calc(100vw / 39); }
+
+  h1 { font-size: 3.4rem; line-height: 4.4rem; }
+  h2 { font-size: 2.3rem; line-height: 3.2rem; }
+  h3 { font-size: 2.2rem; line-height: 3rem; white-space: normal; }
+  .label { white-space: normal; }
+  .w720, .w240 { width: 100%; }
+
+  .nav { flex-wrap: wrap; gap: 1.2rem; height: auto; padding: 1.2rem 2rem; }
+  .brand-name { font-size: 1.7rem; line-height: 2.2rem; }
+  .nav .jp-small { font-size: 1.1rem; line-height: 1.5rem; }
+  .nav > .btn { padding: 1rem 1.4rem; font-size: 1.2rem; }
+  .links { order: 3; gap: 2rem; width: 100%; overflow-x: auto; padding-bottom: 0.4rem; white-space: nowrap; }
+
+  .sec { gap: 3.2rem; padding: 5.6rem 2rem; }
+  .philosophy, .space { padding-top: 2rem; }
+
+  .hero { flex-direction: column; align-items: stretch; gap: 3.2rem; padding: 3.2rem 2rem 4rem; }
+  .hero-text { flex: none; }
+  .row-16 { flex-wrap: wrap; }
+  .hero-visual { width: 100%; height: 40rem; }
+  .hero-img { left: 0; top: 0; width: 100%; height: 100%; border-radius: 3.2rem; }
+  .next { left: 1.2rem; top: auto; bottom: 1.2rem; padding: 1.4rem 1.6rem; }
+  .next b { font-size: 1.6rem; line-height: 2.2rem; }
+  .enjoy-hero { left: auto; right: 1.2rem; top: 1.2rem; padding: 0.4rem 2rem 0.8rem; font-size: 2.8rem; line-height: 3.4rem; }
+
+  .bento { flex-direction: column; align-items: stretch; gap: 1.6rem; }
+  .bento-right { gap: 1.6rem; }
+  .bento .row-24 { align-items: stretch; gap: 1.6rem; }
+  .card { padding: 2rem; border-radius: 2.4rem; }
+  .c1, .c2 { width: 100%; height: auto; }
+  .c1 img { height: 22rem; }
+  .c2 img { width: 12rem; height: 14rem; }
+  .c3, .c4 { flex: 1 1 0; width: auto; min-width: 0; height: auto; min-height: 22rem; }
+  .c3 img { height: 9rem; }
+  .c3 h4 { font-size: 1.6rem; line-height: 2.2rem; }
+  .c4 h3 { font-size: 1.9rem; line-height: 2.6rem; }
+  .kanji { left: 5rem; font-size: 14rem; }
+
+  .full { flex-direction: column; align-items: stretch; }
+  .menu .row-24.full { align-items: stretch; }
+  .mocha { height: 30rem; }
+  .product { flex: none; width: 100%; }
+  .product img { height: 26rem; }
+
+  .banner { width: 100%; height: auto; }
+  .banner-img { position: static; display: block; width: 100%; height: 26rem; border-radius: 0; }
+  .banner-text { position: static; padding: 2.4rem; }
+
+  .full > img.r32 { width: 100% !important; height: 26rem !important; }
+  .col-24 { gap: 1.6rem; }
+  .col-24 > img.r32 { width: 100% !important; height: 20rem !important; }
+  .col-24 .row-24 { gap: 1.6rem; }
+  .col-24 .row-24 img.r32 { width: calc(50% - 0.8rem) !important; height: 16rem !important; }
+
+  .story-wrap { padding: 0 2rem 5.6rem; }
+  .story { flex-direction: column; height: auto; border-radius: 3.2rem; }
+  .story-text { flex: none; height: auto; padding: 4rem 2.4rem; }
+  .kanji2 { left: 15rem; top: 18rem; font-size: 18rem; }
+  .story-img { width: 100%; height: 28rem; }
+
+  .journal { gap: 3.2rem; padding: 0 2rem 5.6rem; }
+  .post { flex: none; width: 100%; min-height: 0; }
+
+  .map { width: 100%; height: 34rem; }
+  .map-label { left: 1.6rem; top: 1.6rem; }
+  .pin-active { left: 14rem; top: 12rem; }
+  .search { top: 27.4rem; }
+  .search.muted { left: 9rem !important; }
+  .panel { width: 100%; height: auto; padding: 3.2rem 2.4rem; }
+
+  .rewards { flex-direction: column; align-items: stretch; gap: 3.2rem; padding: 5.6rem 2rem; }
+  .phones { width: 100%; height: 44rem; }
+  .phones .phone { transform: scale(0.74); transform-origin: top left; }
+  .phones .phone:first-child { left: 16rem !important; }
+  .phones .phone:last-child { left: 1rem !important; }
+  .rewards-text { flex: none; }
+  .steps b { font-size: 1.6rem; line-height: 2.4rem; white-space: normal; }
+
+  .footer { gap: 3.6rem; padding: 5.6rem 2rem 9rem; }
+  .foot-cols { flex-direction: column; gap: 3.2rem; }
+  .foot-brand, .foot-visit { width: 100%; }
+  .foot-big { font-size: 3rem; line-height: 4rem; }
+  .foot-bottom { flex-direction: column; gap: 0.8rem; white-space: normal; }
+}

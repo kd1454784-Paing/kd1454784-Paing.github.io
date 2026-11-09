@@ -241,25 +241,171 @@ body {
   max-width: 620px;
 }
 
-/* SNS icon */
+.about-text.en {
+  margin-top: 28px;
+  opacity: 0.78;
+}
+
+/* အလုပ်ရှာနေကြောင်း ပြတဲ့ စာကြောင်း */
+.available {
+  display: inline-block;
+  margin-top: 28px;
+  padding: 12px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.available b {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.08em;
+  opacity: 0.7;
+}
+
+.available span {
+  display: block;
+  font-size: 13px;
+  opacity: 0.75;
+}
+
+/* ခေါင်းစဉ်လေးတွေ (経歴 / スキル) */
+.about-label {
+  margin-top: 64px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.about-label span {
+  margin-left: 8px;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+/* အလုပ်အတွေ့အကြုံ အချိန်စဉ် */
+.timeline {
+  list-style: none;
+  max-width: 620px;
+  margin-top: 18px;
+  border-left: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.timeline li {
+  position: relative;
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 12px;
+  padding: 10px 0 10px 22px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.timeline li::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 17px;
+  width: 9px;
+  height: 9px;
+  background: white;
+  border-radius: 50%;
+}
+
+.timeline span {
+  display: block;
+  font-size: 13px;
+  opacity: 0.65;
+}
+
+/* Tool နဲ့ ဘာသာစကား */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 620px;
+  margin-top: 18px;
+  list-style: none;
+}
+
+.skills li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 999px;
+  font-size: 14px;
+}
+
+/* Tool icon (images/icons ထဲမှာ ရှိတယ်) */
+.skills img {
+  display: block;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.skills.lang {
+  margin-top: 12px;
+}
+
+.skills.lang li {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.skills.lang span {
+  margin-left: 8px;
+  font-size: 12px;
+  opacity: 0.65;
+}
+
+/* SNS (နာမည်ပါတဲ့ ခလုတ်) */
 .sns {
   display: flex;
-  gap: 16px;
-  margin-top: 60px;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 56px;
 }
 
 .sns-icon {
-  width: 28px;
-  height: 28px;
-  background-color: white;
-  color: #161616;
-  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px 8px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+  color: white;
   text-decoration: none;
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 14px;
+  transition: background 0.25s ease;
+}
+
+.sns-icon i {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  color: #161616;
+  border-radius: 50%;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.sns-icon:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.contact-big a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 /* ===== 4. Contact ===== */
@@ -353,7 +499,15 @@ body {
     padding-left: 20px;
   }
   .contact-big {
-    font-size: 22px;
+    font-size: 20px;
+    overflow-wrap: anywhere;
+  }
+  .about {
+    padding-left: 20px;
+  }
+  .timeline li {
+    grid-template-columns: 1fr;
+    gap: 2px;
   }
 }
 
